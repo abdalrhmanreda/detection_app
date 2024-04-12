@@ -10,7 +10,9 @@ class TitleAndTextFormFeild extends StatelessWidget {
     required this.nameController,
     required this.title,
     required this.hint,
+    this.validator,
   });
+  final String? Function(String?)? validator;
 
   final TextEditingController nameController;
   final String title;
@@ -27,11 +29,16 @@ class TitleAndTextFormFeild extends StatelessWidget {
               Theme.of(context).textTheme.bodySmall!.copyWith(fontSize: 15.sp),
         ),
         Spacing.verticalSpace(10),
-        ContainerTextFormFeild(
-          isPass: false,
-          controller: nameController,
-          hint: hint,
-          keyboardType: TextInputType.emailAddress,
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ContainerTextFormFeild(
+              isPass: false,
+              controller: nameController,
+              hint: hint,
+              keyboardType: TextInputType.emailAddress,
+            ),
+          ],
         ),
       ],
     );

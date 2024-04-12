@@ -1,5 +1,6 @@
 import 'package:detection_app/config/routes/routes_path.dart';
 import 'package:detection_app/core/di/dependancy_injection.dart';
+import 'package:detection_app/features/home/ui/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -23,6 +24,10 @@ class AppRouter {
           builder: (_) => BlocProvider(
               create: (context) => getIt<AuthCubit>(),
               child: const RegisterScreen()),
+        );
+      case RoutePath.home:
+        return MaterialPageRoute(
+          builder: (_) => const HomeScreen(),
         );
       default:
         return MaterialPageRoute(
