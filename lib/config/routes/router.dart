@@ -1,6 +1,7 @@
 import 'package:detection_app/config/routes/routes_path.dart';
 import 'package:detection_app/core/di/dependancy_injection.dart';
 import 'package:detection_app/features/chatbot/ui/screens/chatbot.dart';
+import 'package:detection_app/features/get_started/screens/get_started.dart';
 import 'package:detection_app/features/home/ui/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -30,6 +31,11 @@ class AppRouter {
       case RoutePath.home:
         return MaterialPageRoute(
           builder: (_) => const HomeScreen(),
+        );
+
+      case RoutePath.getStarted:
+        return MaterialPageRoute(
+          builder: (_) => const GetStartedScreen(),
         );
       case RoutePath.chatbot:
         return MaterialPageRoute(

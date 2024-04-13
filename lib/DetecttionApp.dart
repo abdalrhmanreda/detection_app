@@ -20,7 +20,7 @@ class DetectionApp extends StatelessWidget {
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         theme: Style.lightTheme,
-        initialRoute: RoutePath.chatbot,
+        initialRoute: RoutePath.getStarted,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );
