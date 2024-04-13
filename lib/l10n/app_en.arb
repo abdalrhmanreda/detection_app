@@ -1,10 +1,5 @@
 {
-  "onBoardingTitle1": "Welcome to \nNike",
-  "onBoardingDescription1" : "Discover a world of knowledge and learning at your fingertips with 3almni. We're here to guide you through an enriching educational journey",
-  "onBoardingTitle2": "Let’s Start Journey \nWith Nike",
-  "onBoardingDescription2" : "Smart, Gorgeous & Fashionable Collection Explor Now",
-  "onBoardingTitle3": "You Have the Power To",
-  "onBoardingDescription3" : "There Are Many Beautiful And Attractive Plants To Your Room" ,
+  "title": "Device Detector",
   "onBoardingButtonText" : "Next" ,
   "onBoardingTextButtonText": "Skip" ,
   "loginScreenTitlePartOne": "Hello Again!" ,
@@ -83,7 +78,10 @@
   "yes": "Yes" ,
     "no": "No" ,
   "chatBot": "Chat Bot" ,
-  "loginSuccess": "Login Successfully"
+  "loginSuccess": "Login Successfully" ,
+  "getStarted": "Get Started",
+  "getStartedDesc": "Device Detective is your go-to companion for exploring and managing your Android device" ,
+  "getStartedTitle": "Device Detective"
 
 
 
