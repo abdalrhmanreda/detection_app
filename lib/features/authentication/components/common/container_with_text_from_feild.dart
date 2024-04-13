@@ -70,17 +70,18 @@ class ContainerTextFormFeild extends StatelessWidget {
             keyboardType: keyboardType,
           ),
         ),
-        if (validator != null)
-          Padding(
-            padding: const EdgeInsets.only(top: 4.0, left: 12.0),
-            child: Text(
-              validator!(controller.text) ?? '',
-              style: TextStyle(
-                color: Colors.red,
-                fontSize: 12.sp,
-              ),
-            ),
-          ),
+        //   if (validator != null)
+        //     Padding(
+        //       padding: const EdgeInsets.only(top: 4.0, left: 12.0),
+        //       child: Text(
+        //         validator!(controller.text) ?? '',
+        //         style: TextStyle(
+        //           color: Colors.red,
+        //           fontSize: 12.sp,
+        //         ),
+        //       ),
+        //     ),
+        // ],
       ],
     );
   }
