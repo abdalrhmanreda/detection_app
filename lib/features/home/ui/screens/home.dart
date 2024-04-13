@@ -1,3 +1,5 @@
+import 'package:detection_app/config/routes/routes_path.dart';
+import 'package:detection_app/core/helpers/extensions.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -5,6 +7,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Home Screen'),
+      ),
+      body: Center(
+        child: InkWell(
+            onTap: () {
+              context.navigateToWidgetByNamed(context, RoutePath.chatbot);
+            },
+            child: Text('Home Screen')),
+      ),
+    );
   }
 }

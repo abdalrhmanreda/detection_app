@@ -95,10 +95,7 @@ dependencies:
   flutter_advanced_drawer: ^1.3.6
   # flutter assets generator
   flutter_lints: ^3.0.1
-  # drawe path between source and destionation
-  # to control size of image
-  # to make rate
-  # to show animation
+  # aniamtion lottie
   lottie: ^3.1.0
   # circular countdown using Circular Countdown
   # check internet connection
@@ -118,7 +115,10 @@ dependencies:
   cloud_firestore: ^4.16.1
   #to make condtions
   conditional_builder_null_safety: ^0.0.6
-
+  #chatbot
+  flutter_gemini: ^2.0.3
+  dash_chat_2: ^0.0.20
+  google_generative_ai: ^0.3.0
 
 
 dev_dependencies:
@@ -173,3 +173,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/images/
+
