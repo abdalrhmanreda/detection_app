@@ -81,7 +81,14 @@
   "loginSuccess": "Login Successfully" ,
   "getStarted": "Get Started",
   "getStartedDesc": "Device Detective is your go-to companion for exploring and managing your Android device" ,
-  "getStartedTitle": "Device Detective"
+  "getStartedTitle": "Device Detective" ,
+  "aboutPhone": "About Phone" ,
+  "deviceName": "Device Name" ,
+    "deviceModel": "Device Model" ,
+    "deviceBrand": "Device Brand" ,
+  "androidVersion": "Android Version" ,
+  "codeName": "Code Name" ,
+  "androidScurePatch": "Android Security update"
 
 
 

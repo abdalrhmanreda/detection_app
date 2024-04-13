@@ -1,24 +1,24 @@
-// import 'dart:async';
-//
-// import 'package:dio/dio.dart';
-// import 'package:easy_parking_system/features/register/controller/signup_cubit.dart';
-// import 'package:easy_parking_system/features/register/data/repo/sign_up_repo.dart';
-// import 'package:get_it/get_it.dart';
-//
-// import '../api/api_service.dart';
-// import '../api/dio_factory.dart';
-//
 import 'package:detection_app/features/authentication/controller/auth_cubit.dart';
 import 'package:detection_app/features/chatbot/logic/chat_bot_cubit.dart';
+import 'package:detection_app/features/home/logic/home_cubit.dart';
 import 'package:get_it/get_it.dart';
 
-import '../constant/strings.dart';
+final getIt = GetIt
+    .instance; // Create a singleton instance of GetIt for dependency injection
 
-final getIt = GetIt.instance;
-//
+// This function initializes and registers dependencies using GetIt
 Future<void> setupGetIt() async {
-  // register your other dependencies here
-  getIt.registerFactory<AuthCubit>(
-      () => AuthCubit()..getUserData(userId: userId!));
+  // Register your other dependencies here
+
+  // Register the AuthCubit as a factory.
+  // This means a new instance of AuthCubit will be created each time it is requested.
+  getIt.registerFactory<AuthCubit>(() => AuthCubit());
+
+  // Register the ChatBotCubit as a factory.
+  // This means a new instance of ChatBotCubit will be created each time it is requested.
   getIt.registerFactory<ChatBotCubit>(() => ChatBotCubit());
+
+  // Register the HomeCubit as a factory.
+  // This means a new instance of HomeCubit will be created each time it is requested.
+  getIt.registerFactory<HomeCubit>(() => HomeCubit());
 }

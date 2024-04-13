@@ -10,6 +10,7 @@ import '../../features/authentication/controller/auth_cubit.dart';
 import '../../features/authentication/screens/login_screen/login_screen.dart';
 import '../../features/authentication/screens/register_screen/register_screen.dart';
 import '../../features/chatbot/logic/chat_bot_cubit.dart';
+import '../../features/home/logic/home_cubit.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
@@ -30,7 +31,9 @@ class AppRouter {
         );
       case RoutePath.home:
         return MaterialPageRoute(
-          builder: (_) => const HomeScreen(),
+          builder: (_) => BlocProvider(
+              create: (context) => getIt<HomeCubit>()..detectDevice(),
+              child: const HomeScreen()),
         );
 
       case RoutePath.getStarted:

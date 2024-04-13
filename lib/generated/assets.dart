@@ -4,5 +4,6 @@ class Assets {
 
   static const String imagesCancel = 'assets/images/cancel.json';
   static const String imagesConfrim = 'assets/images/confrim.json';
+  static const String imagesLoading = 'assets/images/loading.json';
   static const String imagesUpdateBro = 'assets/images/Update-bro.png';
 }
