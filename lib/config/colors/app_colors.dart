@@ -38,5 +38,7 @@ class AppColors {
   static const Color kMapColor = Color(0xff2d313f);
   static const Color kPurpleColor = Color(0xff717fff);
   static const Color kGreenColor = Color(0xff4caf50);
+  static const Color kHomeContainerColor = Color(0xfff7f7f6);
+
   static const Color kUnSelectedCircleIndictiorColor = Color(0xff90a6a7);
 }

@@ -56,7 +56,6 @@ dependencies:
   #localiztion
   intl: ^0.18.1
   #splash screen
-  #  flutter_native_splash: ^2.3.13
   #google fonts
   google_fonts: ^6.2.0
   # screen utils for responsive design
@@ -65,7 +64,6 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   #shared preferences
-  shared_preferences: ^2.2.2
   # svg picture
   flutter_svg: ^2.0.10+1
   #loading_indicator
@@ -74,17 +72,12 @@ dependencies:
   url_launcher: ^6.2.5
   # icons
   icons_plus: ^5.0.0
-  iconly: ^1.0.1
   # to auto generate code
   build_runner: ^2.4.8
   #equatable for models
   equatable: ^2.0.5
   # smooth page indicator for page view
   smooth_page_indicator: ^1.1.0
-  #device preview to check responsive
-  device_preview: ^1.1.0
-  # to get  card scanner
-  flutter_card_scanner: ^1.0.4
   permission_handler: ^11.3.0
   # steper for onboarding
   step_progress_indicator: ^1.0.2
@@ -97,18 +90,13 @@ dependencies:
   flutter_lints: ^3.0.1
   # aniamtion lottie
   lottie: ^3.1.0
-  # circular countdown using Circular Countdown
   # check internet connection
   connectivity_plus: ^5.0.2
   # to generate qr code
   qr_flutter: ^4.1.0
   # dashed line
-  # firebase
   firebase_core: ^2.28.0
   # to show bottom date
-  bottom_picker: ^2.6.0
-  # to sign in with google
-  google_sign_in: ^6.2.1
   # firebase auth
   firebase_auth: ^4.19.1
  # to Store date in firebase
@@ -116,9 +104,12 @@ dependencies:
   #to make condtions
   conditional_builder_null_safety: ^0.0.6
   #chatbot
-  flutter_gemini: ^2.0.3
   dash_chat_2: ^0.0.20
   google_generative_ai: ^0.3.0
+  # to detect device info
+  device_info_plus: ^10.1.0
+  # gradient_text
+  simple_gradient_text: ^1.3.0
 
 
 dev_dependencies:
