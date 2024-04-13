@@ -7,17 +7,20 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DetectionApp extends StatelessWidget {
   final AppRouter appRouter;
-  const DetectionApp({super.key, required this.appRouter});
+  final String initRoute;
+  const DetectionApp(
+      {super.key, required this.appRouter, required this.initRoute});
 
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       builder: (context, child) => MaterialApp(
+        debugShowCheckedModeBanner: false,
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         theme: Style.lightTheme,
-        initialRoute: RoutePath.login,
+        initialRoute: RoutePath.chatbot,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );

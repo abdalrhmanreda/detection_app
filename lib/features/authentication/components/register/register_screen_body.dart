@@ -1,5 +1,4 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
-import 'package:detection_app/core/helpers/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -8,11 +7,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../../config/colors/app_colors.dart';
 import '../../../../../../core/components/custom_button.dart';
 import '../../../../../../core/constant/app_constant.dart';
-import '../../../../../config/routes/routes_path.dart';
+import '../../../../config/routes/routes_path.dart';
 import '../../../../core/components/progress_indector.dart';
 import '../../../../core/helpers/spacing.dart';
+import '../../../../generated/assets.dart';
 import '../../controller/auth_cubit.dart';
 import '../../controller/auth_state.dart';
+import '../common/alert.dart';
 import '../common/build_text_next_to_text_button.dart';
 import '../common/build_two_text_form_field.dart';
 import 'full_name.dart';
@@ -31,9 +32,26 @@ class RegisterScreenBody extends StatelessWidget {
       listener: (context, state) {
         // TODO: implement listener
         if (state is GetUserDataSuccessState) {
-          context.navigateToWidgetByNamed(context, RoutePath.home);
+          showAlertDialog(
+            context,
+            title: AppLocalizations.of(context)!.registerSuccess,
+            image: Assets.imagesConfrim,
+            isCancel: false,
+            onPressed: () {
+              Navigator.pushNamed(context, RoutePath.home);
+            },
+          );
         } else if (state is FailureState) {
           // showToast(message: state.error, state: ToastState.ERROR);
+          showAlertDialog(
+            context,
+            title: AppLocalizations.of(context)!.registerError,
+            image: Assets.imagesCancel,
+            isCancel: true,
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          );
         }
       },
       builder: (context, state) {

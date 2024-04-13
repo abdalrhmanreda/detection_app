@@ -91,7 +91,7 @@ class AuthCubit extends Cubit<AuthState> {
         .get()
         .then((value) {
       userModel = UserModel.fromJson(value.data()!);
-
+      name = userModel!.name;
       print(userModel!.email);
 
       emit(AuthState.getUserDataSuccessState());

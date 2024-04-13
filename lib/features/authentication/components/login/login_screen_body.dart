@@ -1,5 +1,7 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:detection_app/core/helpers/extensions.dart';
+import 'package:detection_app/features/authentication/components/common/alert.dart';
+import 'package:detection_app/generated/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -26,10 +28,26 @@ class LoginScreenBody extends StatelessWidget {
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state is GetUserDataSuccessState) {
-          // showToast(message: 'Login successfully', state: ToastState.SUCCESS);
-          context.navigateToWidgetByNamed(context, RoutePath.home);
+          showAlertDialog(
+            context,
+            title: AppLocalizations.of(context)!.loginSuccess,
+            image: Assets.imagesConfrim,
+            isCancel: false,
+            onPressed: () {
+              context.navigateToWidgetByNamed(context, RoutePath.home);
+            },
+          );
         } else if (state is FailureState) {
           // showToast(message: state.error, state: ToastState.ERROR);
+          showAlertDialog(
+            context,
+            title: AppLocalizations.of(context)!.registerError,
+            image: Assets.imagesCancel,
+            isCancel: true,
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          );
         }
       },
       builder: (context, state) {

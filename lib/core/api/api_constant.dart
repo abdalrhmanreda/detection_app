@@ -1,9 +1,5 @@
 class ApiConstant {
-  static const String baseUrl = "http://10.0.2.2:8000/api/";
-  static const String login = "auth/login";
-  static const String signup = "register";
-  static const String googleMapApiKey =
-      'AIzaSyDhDTdS1TbmYZKTAts3xY1YPOEWmvrR4ls';
+  static const String geminiApiKey = "AIzaSyAa1gWm4OznaNxTcz25dJMvzjLudeNVKR4";
 }
 
 class ApiErrors {

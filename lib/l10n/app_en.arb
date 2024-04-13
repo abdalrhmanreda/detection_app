@@ -77,7 +77,13 @@
   "addToFavorite": "Add To Favorite" ,
   "addToWishList": "Add To WishList" ,
   "add": "Add" ,
-  "addProduct": "Add Product"
+  "addProduct": "Add Product" ,
+  "registerError": "Something went wrong, please try again" ,
+    "registerSuccess": "Register Successfully",
+  "yes": "Yes" ,
+    "no": "No" ,
+  "chatBot": "Chat Bot" ,
+  "loginSuccess": "Login Successfully"
 
 
 
