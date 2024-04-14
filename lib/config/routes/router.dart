@@ -2,6 +2,8 @@ import 'package:detection_app/config/routes/routes_path.dart';
 import 'package:detection_app/core/di/dependancy_injection.dart';
 import 'package:detection_app/features/authentication/screens/forget_password/forget_pass.dart';
 import 'package:detection_app/features/chatbot/ui/screens/chatbot.dart';
+import 'package:detection_app/features/custom_rooms/logic/rooms_cubit.dart';
+import 'package:detection_app/features/custom_rooms/ui/screens/custom_rooms_screen.dart';
 import 'package:detection_app/features/get_started/screens/get_started.dart';
 import 'package:detection_app/features/home/ui/screens/home.dart';
 import 'package:flutter/material.dart';
@@ -52,6 +54,12 @@ class AppRouter {
           builder: (_) => BlocProvider(
               create: (context) => getIt<AuthCubit>(),
               child: const ForgetPasswordScreen()),
+        );
+      case RoutePath.customRoms:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+              create: (context) => getIt<RoomsCubit>()..fetchRooms(),
+              child: const CustomRoomsScreen()),
         );
       default:
         return MaterialPageRoute(

@@ -111,6 +111,9 @@ class LoginScreenBody extends StatelessWidget {
                                     AuthCubit.get(context).userLogin(
                                         email: emailController.text,
                                         password: passController.text);
+                                    // context
+                                    //     .read<AuthCubit>()
+                                    //     .uploadJsonDataToFirestore();
                                   }
                                 },
                                 text: AppLocalizations.of(context)!

@@ -143,4 +143,26 @@ class AuthCubit extends Cubit<AuthState> {
       emit(AuthState.failure(error: e.toString()));
     }
   }
+
+  // void uploadJsonDataToFirestore() async {
+  //   try {
+  //     // Step 1: Read JSON data from file
+  //     String jsonString = await rootBundle.loadString(Assets.dataData);
+  //
+  //     // Step 2: Parse JSON data into Dart objects
+  //     List<Map<String, dynamic>> jsonData =
+  //         List<Map<String, dynamic>>.from(json.decode(jsonString)['merlin']);
+  //
+  //     // Step 3: Upload Dart objects to Firestore
+  //     CollectionReference collection =
+  //         FirebaseFirestore.instance.collection('data');
+  //     for (var item in jsonData) {
+  //       await collection.add(item);
+  //     }
+  //
+  //     print('Data uploaded to Firestore successfully!');
+  //   } catch (e) {
+  //     print('Error uploading data to Firestore: $e');
+  //   }
+  // }
 }

@@ -2,6 +2,9 @@
 class Assets {
   Assets._();
 
+  static const String dataData = 'assets/data/data.json';
+  static const String imagesAnd = 'assets/images/and.png';
+  static const String imagesAndroid = 'assets/images/android.png';
   static const String imagesCancel = 'assets/images/cancel.json';
   static const String imagesConfrim = 'assets/images/confrim.json';
   static const String imagesCpu = 'assets/images/cpu.jpg';
