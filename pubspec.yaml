@@ -110,6 +110,8 @@ dependencies:
   device_info_plus: ^10.1.0
   # gradient_text
   simple_gradient_text: ^1.3.0
+  # expandable panel
+  expandable: ^5.0.1
 
 
 dev_dependencies:
@@ -166,4 +168,5 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/images/
+    - assets/data/
 

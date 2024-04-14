@@ -1,8 +1,10 @@
+import 'package:detection_app/core/helpers/extensions.dart';
 import 'package:detection_app/core/helpers/spacing.dart';
 import 'package:detection_app/generated/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../config/routes/routes_path.dart';
 import '../../../../core/constant/app_constant.dart';
 
 class CustomRoms extends StatelessWidget {
@@ -56,7 +58,7 @@ class CustomRoms extends StatelessWidget {
         GestureDetector(
           onTap: () {
             // Navigate to the custom ROMs screen when the arrow icon is tapped
-            // context.navigateToWidgetByNamed(context, RoutePath.customRoms);
+            context.navigateToWidgetByNamed(context, RoutePath.customRoms);
           },
           child: const Icon(
             Icons.arrow_forward_ios,

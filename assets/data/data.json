@@ -1,0 +1,44 @@
+{
+  "merlin": [
+    {
+      "device": "Merlin",
+      "roomName": "CRDROID",
+      "version": 14,
+      "state": "STABLE",
+      "link": "https://tinyurl.com/2p8sxwv5",
+      "xda": "https://tinyurl.com/2p8sxwv5"
+    },
+    {
+      "device": "Merlin",
+      "roomName": "CRDROID",
+      "version": 13,
+      "state": "STABLE",
+      "link": "https://tinyurl.com/52axeah3",
+      "xda": "https://tinyurl.com/4tyv3mjb"
+    },
+    {
+      "device": "Merlin",
+      "roomName": "Project Elixir",
+      "version": 12.1,
+      "state": "STABLE",
+      "link": "https://tinyurl.com/ypyz87nn",
+      "xda": "https://tinyurl.com/455kjsvf"
+    },
+    {
+      "device": "Merlin",
+      "roomName": "LineageOS",
+      "version": 11,
+      "state": "STABLE",
+      "link": "https://tinyurl.com/4kz2em6n",
+      "xda": "https://tinyurl.com/mwtk8v78"
+    },
+    {
+      "device": "Merlin",
+      "roomName": "SuperiorOS",
+      "version": 14,
+      "state": "closed",
+      "link": "not available",
+      "xda": ""
+    }
+  ]
+}
