@@ -9,9 +9,11 @@ import 'package:detection_app/features/home/logic/home_state.dart';
 import 'package:detection_app/generated/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lottie/lottie.dart';
 
+import '../../../../core/helpers/spacing.dart';
 import '../widgets/home_body.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -55,12 +57,21 @@ class HomeScreen extends StatelessWidget {
                 context.read<HomeCubit>().androidInfo != null,
             builder: (context) => const HomeBody(),
             fallback: (context) => Center(
-              child: Lottie.asset(
-                Assets.imagesLoading,
-                height: 50.h,
-                width: 50.w,
-                fit: BoxFit.cover,
-                alignment: Alignment.center,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Lottie.asset(
+                    Assets.imagesLoading,
+                    height: 50.h,
+                    width: 50.w,
+                    fit: BoxFit.cover,
+                    alignment: Alignment.center,
+                  ),
+                  Spacing.verticalSpace(10),
+                  Text(
+                    AppLocalizations.of(context)!.loading,
+                  ),
+                ],
               ),
             ),
           ), // Display the HomeBody widget

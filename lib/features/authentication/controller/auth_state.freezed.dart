@@ -28,6 +28,7 @@ mixin _$AuthState<T> {
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -42,6 +43,7 @@ mixin _$AuthState<T> {
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -56,6 +58,7 @@ mixin _$AuthState<T> {
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -75,6 +78,8 @@ mixin _$AuthState<T> {
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -91,6 +96,8 @@ mixin _$AuthState<T> {
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -106,6 +113,8 @@ mixin _$AuthState<T> {
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -177,6 +186,7 @@ class _$InitialStateImpl<T> extends InitialState<T> {
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) {
     return initial();
   }
@@ -194,6 +204,7 @@ class _$InitialStateImpl<T> extends InitialState<T> {
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) {
     return initial?.call();
   }
@@ -211,6 +222,7 @@ class _$InitialStateImpl<T> extends InitialState<T> {
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -236,6 +248,8 @@ class _$InitialStateImpl<T> extends InitialState<T> {
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) {
     return initial(this);
   }
@@ -255,6 +269,8 @@ class _$InitialStateImpl<T> extends InitialState<T> {
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) {
     return initial?.call(this);
   }
@@ -273,6 +289,8 @@ class _$InitialStateImpl<T> extends InitialState<T> {
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -335,6 +353,7 @@ class _$LoadingStateImpl<T> extends LoadingState<T> {
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) {
     return loading();
   }
@@ -352,6 +371,7 @@ class _$LoadingStateImpl<T> extends LoadingState<T> {
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) {
     return loading?.call();
   }
@@ -369,6 +389,7 @@ class _$LoadingStateImpl<T> extends LoadingState<T> {
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -394,6 +415,8 @@ class _$LoadingStateImpl<T> extends LoadingState<T> {
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) {
     return loading(this);
   }
@@ -413,6 +436,8 @@ class _$LoadingStateImpl<T> extends LoadingState<T> {
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) {
     return loading?.call(this);
   }
@@ -431,6 +456,8 @@ class _$LoadingStateImpl<T> extends LoadingState<T> {
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -520,6 +547,7 @@ class _$FailureStateImpl<T> extends FailureState<T> {
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) {
     return failure(error);
   }
@@ -537,6 +565,7 @@ class _$FailureStateImpl<T> extends FailureState<T> {
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) {
     return failure?.call(error);
   }
@@ -554,6 +583,7 @@ class _$FailureStateImpl<T> extends FailureState<T> {
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (failure != null) {
@@ -579,6 +609,8 @@ class _$FailureStateImpl<T> extends FailureState<T> {
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) {
     return failure(this);
   }
@@ -598,6 +630,8 @@ class _$FailureStateImpl<T> extends FailureState<T> {
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) {
     return failure?.call(this);
   }
@@ -616,6 +650,8 @@ class _$FailureStateImpl<T> extends FailureState<T> {
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (failure != null) {
@@ -683,6 +719,7 @@ class _$SuccessStateImpl<T> extends SuccessState<T> {
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) {
     return success();
   }
@@ -700,6 +737,7 @@ class _$SuccessStateImpl<T> extends SuccessState<T> {
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) {
     return success?.call();
   }
@@ -717,6 +755,7 @@ class _$SuccessStateImpl<T> extends SuccessState<T> {
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -742,6 +781,8 @@ class _$SuccessStateImpl<T> extends SuccessState<T> {
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) {
     return success(this);
   }
@@ -761,6 +802,8 @@ class _$SuccessStateImpl<T> extends SuccessState<T> {
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) {
     return success?.call(this);
   }
@@ -779,6 +822,8 @@ class _$SuccessStateImpl<T> extends SuccessState<T> {
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -842,6 +887,7 @@ class _$LoginSuccessStateImpl<T> extends LoginSuccessState<T> {
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) {
     return loginSuccessState();
   }
@@ -859,6 +905,7 @@ class _$LoginSuccessStateImpl<T> extends LoginSuccessState<T> {
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) {
     return loginSuccessState?.call();
   }
@@ -876,6 +923,7 @@ class _$LoginSuccessStateImpl<T> extends LoginSuccessState<T> {
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (loginSuccessState != null) {
@@ -901,6 +949,8 @@ class _$LoginSuccessStateImpl<T> extends LoginSuccessState<T> {
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) {
     return loginSuccessState(this);
   }
@@ -920,6 +970,8 @@ class _$LoginSuccessStateImpl<T> extends LoginSuccessState<T> {
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) {
     return loginSuccessState?.call(this);
   }
@@ -938,6 +990,8 @@ class _$LoginSuccessStateImpl<T> extends LoginSuccessState<T> {
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (loginSuccessState != null) {
@@ -1002,6 +1056,7 @@ class _$RegisterSuccessStateImpl<T> extends RegisterSuccessState<T> {
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) {
     return registerSuccessState();
   }
@@ -1019,6 +1074,7 @@ class _$RegisterSuccessStateImpl<T> extends RegisterSuccessState<T> {
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) {
     return registerSuccessState?.call();
   }
@@ -1036,6 +1092,7 @@ class _$RegisterSuccessStateImpl<T> extends RegisterSuccessState<T> {
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (registerSuccessState != null) {
@@ -1061,6 +1118,8 @@ class _$RegisterSuccessStateImpl<T> extends RegisterSuccessState<T> {
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) {
     return registerSuccessState(this);
   }
@@ -1080,6 +1139,8 @@ class _$RegisterSuccessStateImpl<T> extends RegisterSuccessState<T> {
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) {
     return registerSuccessState?.call(this);
   }
@@ -1098,6 +1159,8 @@ class _$RegisterSuccessStateImpl<T> extends RegisterSuccessState<T> {
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (registerSuccessState != null) {
@@ -1163,6 +1226,7 @@ class _$CreateUserSuccessStateImpl<T> extends CreateUserSuccessState<T> {
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) {
     return createUserSuccessState();
   }
@@ -1180,6 +1244,7 @@ class _$CreateUserSuccessStateImpl<T> extends CreateUserSuccessState<T> {
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) {
     return createUserSuccessState?.call();
   }
@@ -1197,6 +1262,7 @@ class _$CreateUserSuccessStateImpl<T> extends CreateUserSuccessState<T> {
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (createUserSuccessState != null) {
@@ -1222,6 +1288,8 @@ class _$CreateUserSuccessStateImpl<T> extends CreateUserSuccessState<T> {
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) {
     return createUserSuccessState(this);
   }
@@ -1241,6 +1309,8 @@ class _$CreateUserSuccessStateImpl<T> extends CreateUserSuccessState<T> {
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) {
     return createUserSuccessState?.call(this);
   }
@@ -1259,6 +1329,8 @@ class _$CreateUserSuccessStateImpl<T> extends CreateUserSuccessState<T> {
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (createUserSuccessState != null) {
@@ -1324,6 +1396,7 @@ class _$GetUserDataSuccessStateImpl<T> extends GetUserDataSuccessState<T> {
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) {
     return getUserDataSuccessState();
   }
@@ -1341,6 +1414,7 @@ class _$GetUserDataSuccessStateImpl<T> extends GetUserDataSuccessState<T> {
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) {
     return getUserDataSuccessState?.call();
   }
@@ -1358,6 +1432,7 @@ class _$GetUserDataSuccessStateImpl<T> extends GetUserDataSuccessState<T> {
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (getUserDataSuccessState != null) {
@@ -1383,6 +1458,8 @@ class _$GetUserDataSuccessStateImpl<T> extends GetUserDataSuccessState<T> {
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) {
     return getUserDataSuccessState(this);
   }
@@ -1402,6 +1479,8 @@ class _$GetUserDataSuccessStateImpl<T> extends GetUserDataSuccessState<T> {
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) {
     return getUserDataSuccessState?.call(this);
   }
@@ -1420,6 +1499,8 @@ class _$GetUserDataSuccessStateImpl<T> extends GetUserDataSuccessState<T> {
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (getUserDataSuccessState != null) {
@@ -1487,6 +1568,7 @@ class _$UpdateUserDataSuccessStateImpl<T>
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) {
     return updateUserDataSuccessState();
   }
@@ -1504,6 +1586,7 @@ class _$UpdateUserDataSuccessStateImpl<T>
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) {
     return updateUserDataSuccessState?.call();
   }
@@ -1521,6 +1604,7 @@ class _$UpdateUserDataSuccessStateImpl<T>
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (updateUserDataSuccessState != null) {
@@ -1546,6 +1630,8 @@ class _$UpdateUserDataSuccessStateImpl<T>
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) {
     return updateUserDataSuccessState(this);
   }
@@ -1565,6 +1651,8 @@ class _$UpdateUserDataSuccessStateImpl<T>
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) {
     return updateUserDataSuccessState?.call(this);
   }
@@ -1583,6 +1671,8 @@ class _$UpdateUserDataSuccessStateImpl<T>
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (updateUserDataSuccessState != null) {
@@ -1646,6 +1736,7 @@ class _$LogoutSuccessStateImpl<T> extends LogoutSuccessState<T> {
     required TResult Function() getUserDataSuccessState,
     required TResult Function() updateUserDataSuccessState,
     required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
   }) {
     return logoutSuccessState();
   }
@@ -1663,6 +1754,7 @@ class _$LogoutSuccessStateImpl<T> extends LogoutSuccessState<T> {
     TResult? Function()? getUserDataSuccessState,
     TResult? Function()? updateUserDataSuccessState,
     TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
   }) {
     return logoutSuccessState?.call();
   }
@@ -1680,6 +1772,7 @@ class _$LogoutSuccessStateImpl<T> extends LogoutSuccessState<T> {
     TResult Function()? getUserDataSuccessState,
     TResult Function()? updateUserDataSuccessState,
     TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (logoutSuccessState != null) {
@@ -1705,6 +1798,8 @@ class _$LogoutSuccessStateImpl<T> extends LogoutSuccessState<T> {
     required TResult Function(UpdateUserDataSuccessState<T> value)
         updateUserDataSuccessState,
     required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
   }) {
     return logoutSuccessState(this);
   }
@@ -1724,6 +1819,8 @@ class _$LogoutSuccessStateImpl<T> extends LogoutSuccessState<T> {
     TResult? Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
   }) {
     return logoutSuccessState?.call(this);
   }
@@ -1742,6 +1839,8 @@ class _$LogoutSuccessStateImpl<T> extends LogoutSuccessState<T> {
     TResult Function(UpdateUserDataSuccessState<T> value)?
         updateUserDataSuccessState,
     TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
     required TResult orElse(),
   }) {
     if (logoutSuccessState != null) {
@@ -1754,4 +1853,174 @@ class _$LogoutSuccessStateImpl<T> extends LogoutSuccessState<T> {
 abstract class LogoutSuccessState<T> extends AuthState<T> {
   factory LogoutSuccessState() = _$LogoutSuccessStateImpl<T>;
   LogoutSuccessState._() : super._();
+}
+
+/// @nodoc
+abstract class _$$ResetPasswordSuccessStateImplCopyWith<T, $Res> {
+  factory _$$ResetPasswordSuccessStateImplCopyWith(
+          _$ResetPasswordSuccessStateImpl<T> value,
+          $Res Function(_$ResetPasswordSuccessStateImpl<T>) then) =
+      __$$ResetPasswordSuccessStateImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$ResetPasswordSuccessStateImplCopyWithImpl<T, $Res>
+    extends _$AuthStateCopyWithImpl<T, $Res, _$ResetPasswordSuccessStateImpl<T>>
+    implements _$$ResetPasswordSuccessStateImplCopyWith<T, $Res> {
+  __$$ResetPasswordSuccessStateImplCopyWithImpl(
+      _$ResetPasswordSuccessStateImpl<T> _value,
+      $Res Function(_$ResetPasswordSuccessStateImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$ResetPasswordSuccessStateImpl<T> extends ResetPasswordSuccessState<T> {
+  _$ResetPasswordSuccessStateImpl() : super._();
+
+  @override
+  String toString() {
+    return 'AuthState<$T>.resetPasswordSuccessState()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ResetPasswordSuccessStateImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(String error) failure,
+    required TResult Function() success,
+    required TResult Function() loginSuccessState,
+    required TResult Function() registerSuccessState,
+    required TResult Function() createUserSuccessState,
+    required TResult Function() getUserDataSuccessState,
+    required TResult Function() updateUserDataSuccessState,
+    required TResult Function() logoutSuccessState,
+    required TResult Function() resetPasswordSuccessState,
+  }) {
+    return resetPasswordSuccessState();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(String error)? failure,
+    TResult? Function()? success,
+    TResult? Function()? loginSuccessState,
+    TResult? Function()? registerSuccessState,
+    TResult? Function()? createUserSuccessState,
+    TResult? Function()? getUserDataSuccessState,
+    TResult? Function()? updateUserDataSuccessState,
+    TResult? Function()? logoutSuccessState,
+    TResult? Function()? resetPasswordSuccessState,
+  }) {
+    return resetPasswordSuccessState?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(String error)? failure,
+    TResult Function()? success,
+    TResult Function()? loginSuccessState,
+    TResult Function()? registerSuccessState,
+    TResult Function()? createUserSuccessState,
+    TResult Function()? getUserDataSuccessState,
+    TResult Function()? updateUserDataSuccessState,
+    TResult Function()? logoutSuccessState,
+    TResult Function()? resetPasswordSuccessState,
+    required TResult orElse(),
+  }) {
+    if (resetPasswordSuccessState != null) {
+      return resetPasswordSuccessState();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(InitialState<T> value) initial,
+    required TResult Function(LoadingState<T> value) loading,
+    required TResult Function(FailureState<T> value) failure,
+    required TResult Function(SuccessState<T> value) success,
+    required TResult Function(LoginSuccessState<T> value) loginSuccessState,
+    required TResult Function(RegisterSuccessState<T> value)
+        registerSuccessState,
+    required TResult Function(CreateUserSuccessState<T> value)
+        createUserSuccessState,
+    required TResult Function(GetUserDataSuccessState<T> value)
+        getUserDataSuccessState,
+    required TResult Function(UpdateUserDataSuccessState<T> value)
+        updateUserDataSuccessState,
+    required TResult Function(LogoutSuccessState<T> value) logoutSuccessState,
+    required TResult Function(ResetPasswordSuccessState<T> value)
+        resetPasswordSuccessState,
+  }) {
+    return resetPasswordSuccessState(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(InitialState<T> value)? initial,
+    TResult? Function(LoadingState<T> value)? loading,
+    TResult? Function(FailureState<T> value)? failure,
+    TResult? Function(SuccessState<T> value)? success,
+    TResult? Function(LoginSuccessState<T> value)? loginSuccessState,
+    TResult? Function(RegisterSuccessState<T> value)? registerSuccessState,
+    TResult? Function(CreateUserSuccessState<T> value)? createUserSuccessState,
+    TResult? Function(GetUserDataSuccessState<T> value)?
+        getUserDataSuccessState,
+    TResult? Function(UpdateUserDataSuccessState<T> value)?
+        updateUserDataSuccessState,
+    TResult? Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult? Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
+  }) {
+    return resetPasswordSuccessState?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(InitialState<T> value)? initial,
+    TResult Function(LoadingState<T> value)? loading,
+    TResult Function(FailureState<T> value)? failure,
+    TResult Function(SuccessState<T> value)? success,
+    TResult Function(LoginSuccessState<T> value)? loginSuccessState,
+    TResult Function(RegisterSuccessState<T> value)? registerSuccessState,
+    TResult Function(CreateUserSuccessState<T> value)? createUserSuccessState,
+    TResult Function(GetUserDataSuccessState<T> value)? getUserDataSuccessState,
+    TResult Function(UpdateUserDataSuccessState<T> value)?
+        updateUserDataSuccessState,
+    TResult Function(LogoutSuccessState<T> value)? logoutSuccessState,
+    TResult Function(ResetPasswordSuccessState<T> value)?
+        resetPasswordSuccessState,
+    required TResult orElse(),
+  }) {
+    if (resetPasswordSuccessState != null) {
+      return resetPasswordSuccessState(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ResetPasswordSuccessState<T> extends AuthState<T> {
+  factory ResetPasswordSuccessState() = _$ResetPasswordSuccessStateImpl<T>;
+  ResetPasswordSuccessState._() : super._();
 }

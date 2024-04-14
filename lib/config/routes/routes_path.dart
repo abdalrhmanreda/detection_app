@@ -5,4 +5,5 @@ class RoutePath {
   static const String register = '/registerScreen';
   static const String home = '/homeScreen';
   static const String chatbot = '/chatbotScreen';
+  static const String forgetPass = '/forgetPassScreen';
 }

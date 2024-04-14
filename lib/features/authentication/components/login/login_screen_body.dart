@@ -87,13 +87,19 @@ class LoginScreenBody extends StatelessWidget {
                       Spacing.verticalSpace(15),
                       Align(
                         alignment: Alignment.centerRight,
-                        child: Text(
-                          AppLocalizations.of(context)!.loginScreenForgetPass,
-                          style:
-                              Theme.of(context).textTheme.bodySmall!.copyWith(
-                                    color: (AppColors.kGreyColor),
-                                    fontSize: 14.sp,
-                                  ),
+                        child: GestureDetector(
+                          onTap: () {
+                            context.navigateToWidgetByNamed(
+                                context, RoutePath.forgetPass);
+                          },
+                          child: Text(
+                            AppLocalizations.of(context)!.loginScreenForgetPass,
+                            style:
+                                Theme.of(context).textTheme.bodySmall!.copyWith(
+                                      color: (AppColors.kGreyColor),
+                                      fontSize: 14.sp,
+                                    ),
+                          ),
                         ),
                       ),
                       Spacing.verticalSpace(20),
