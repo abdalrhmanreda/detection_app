@@ -126,4 +126,21 @@ class AuthCubit extends Cubit<AuthState> {
       emit(AuthState.failure(error: error.toString()));
     });
   }
+
+  Future<void> resetPassword(String email) async {
+    emit(AuthState.loading());
+    try {
+      await FirebaseAuth.instance.sendPasswordResetEmail(
+        email: email,
+      );
+      // Password reset email sent successfully
+      print('Password reset email sent. Check your inbox.');
+      emit(AuthState.resetPasswordSuccessState());
+    } catch (e) {
+      // Error occurred during password reset
+      print('Failed to send password reset email.');
+      print(e); // Optionally, print the error message for debugging
+      emit(AuthState.failure(error: e.toString()));
+    }
+  }
 }

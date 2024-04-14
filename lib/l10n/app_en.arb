@@ -88,7 +88,9 @@
     "deviceBrand": "Device Brand" ,
   "androidVersion": "Android Version" ,
   "codeName": "Code Name" ,
-  "androidScurePatch": "Android Security update"
+  "androidScurePatch": "Android Security update" ,
+  "loading": "Detecting device....." ,
+  "restPass": "Reset Password"
 
 
 

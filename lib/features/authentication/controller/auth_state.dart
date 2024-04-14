@@ -16,4 +16,5 @@ class AuthState<T> with _$AuthState<T> {
   factory AuthState.updateUserDataSuccessState() =
       UpdateUserDataSuccessState<T>;
   factory AuthState.logoutSuccessState() = LogoutSuccessState<T>;
+  factory AuthState.resetPasswordSuccessState() = ResetPasswordSuccessState<T>;
 }
