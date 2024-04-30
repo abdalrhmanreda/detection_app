@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../config/routes/routes_path.dart';
+
 class RoomItem extends StatelessWidget {
   const RoomItem({
     super.key,
@@ -44,7 +46,7 @@ class RoomItem extends StatelessWidget {
             ),
             children: [
               Spacing.verticalSpace(10),
-              Text('Version: $version'),
+              Text('Android Version: $version'),
               Spacing.verticalSpace(10),
               Text('Device: $device'),
               Row(
@@ -52,8 +54,8 @@ class RoomItem extends StatelessWidget {
                 children: [
                   CustomButton(
                     onPressed: () async {
-                      Uri donwload = Uri.parse(link);
-                      await launchUrl(donwload);
+                      Uri download = Uri.parse(link);
+                      await launchUrl(download);
                     },
                     text: 'download',
                     height: 42.h,
@@ -65,8 +67,9 @@ class RoomItem extends StatelessWidget {
                     width: AppConstant.deviceWidth(context) / 2.5,
                     child: OutlinedButton(
                       onPressed: () async {
-                        Uri axdP = Uri.parse(xda);
-                        await launchUrl(axdP);
+                        // Uri axdP = Uri.parse(xda);
+                        // await launchUrl(axdP);
+                        Navigator.pushNamed(context, RoutePath.romDetails);
                       },
                       style: OutlinedButton.styleFrom(
                         shape: RoundedRectangleBorder(
@@ -74,7 +77,7 @@ class RoomItem extends StatelessWidget {
                         ),
                       ),
                       child: const Text(
-                        'preview',
+                        'details',
                         style: TextStyle(
                           fontSize: 16.0,
                           fontWeight: FontWeight.bold,
