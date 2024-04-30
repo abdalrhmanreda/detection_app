@@ -19,7 +19,9 @@ class _YouTubePlayerWidgetState extends State<YouTubePlayerWidget> {
     _controller = YoutubePlayerController(
       initialVideoId: YoutubePlayer.convertUrlToId(widget.videoUrl) ?? '',
       flags: const YoutubePlayerFlags(
-        autoPlay: true,
+        autoPlay: false,
+        controlsVisibleAtStart: true,
+        captionLanguage: 'en',
         mute: false,
       ),
     );
@@ -33,6 +35,9 @@ class _YouTubePlayerWidgetState extends State<YouTubePlayerWidget> {
         flags: const YoutubePlayerFlags(
           autoPlay: true,
           mute: false,
+          captionLanguage: 'en',
+          enableCaption: true,
+          hideControls: false,
         ),
       ),
       showVideoProgressIndicator: true,

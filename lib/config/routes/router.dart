@@ -12,7 +12,6 @@ import '../../features/authentication/screens/login_screen/login_screen.dart';
 import '../../features/authentication/screens/register_screen/register_screen.dart';
 import '../../features/chatbot/logic/chat_bot_cubit.dart';
 import '../../features/home/logic/home_cubit.dart';
-import '../../features/rom_details/ui/screens/rom_details.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
@@ -59,10 +58,10 @@ class AppRouter {
       //         create: (context) => getIt<RoomsCubit>()..fetchRooms(),
       //         child: const CustomRoomsScreen()),
       //   );
-      case RoutePath.romDetails:
-        return MaterialPageRoute(
-          builder: (_) => const RomDetails(),
-        );
+      // case RoutePath.romDetails:
+      //   return MaterialPageRoute(
+      //     builder: (_) => const RomDetails(),
+      //   );
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

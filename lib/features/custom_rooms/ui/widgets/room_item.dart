@@ -1,13 +1,16 @@
 import 'package:detection_app/core/components/custom_button.dart';
 import 'package:detection_app/core/components/custom_divider.dart';
 import 'package:detection_app/core/constant/app_constant.dart';
+import 'package:detection_app/core/helpers/extensions.dart';
 import 'package:detection_app/core/helpers/spacing.dart';
+import 'package:detection_app/features/custom_rooms/logic/rooms_cubit.dart';
+import 'package:detection_app/features/custom_rooms/models/room_model.dart';
+import 'package:detection_app/features/rom_details/ui/screens/rom_details.dart';
 import 'package:detection_app/generated/assets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-import '../../../../config/routes/routes_path.dart';
 
 class RoomItem extends StatelessWidget {
   const RoomItem({
@@ -17,12 +20,14 @@ class RoomItem extends StatelessWidget {
     required this.device,
     required this.link,
     required this.xda,
+    required this.romModel,
   });
   final String roomName;
   final String version;
   final String device;
   final String link;
   final String xda;
+  final RomModel romModel;
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +74,12 @@ class RoomItem extends StatelessWidget {
                       onPressed: () async {
                         // Uri axdP = Uri.parse(xda);
                         // await launchUrl(axdP);
-                        Navigator.pushNamed(context, RoutePath.romDetails);
+                        context.navigateToWidget(
+                            context,
+                            RomDetails(
+                              romModel: romModel,
+                              deviceName: context.read<RoomsCubit>().deviceName,
+                            ));
                       },
                       style: OutlinedButton.styleFrom(
                         shape: RoundedRectangleBorder(

@@ -33,7 +33,9 @@ class RoomsCubit extends Cubit<RoomsState> {
     });
   }
 
+  String deviceName = "";
   List<RomModel> roms(String device) {
+    deviceName = device;
     switch (device) {
       case 'merlin':
         return merlin;

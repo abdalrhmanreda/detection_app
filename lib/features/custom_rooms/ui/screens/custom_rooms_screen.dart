@@ -33,10 +33,19 @@ class CustomRoomsScreen extends StatelessWidget {
               builder: (context) => CustomScrollView(
                 slivers: [
                   CustomSliverAppBar(
+                      leading: IconButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: const Icon(
+                          Icons.arrow_back_ios_new,
+                          color: Colors.black,
+                        ),
+                      ),
                       background: Image.asset(
-                    Assets.imagesInstallationBro,
-                    fit: BoxFit.cover,
-                  )),
+                        Assets.imagesInstallationBro,
+                        fit: BoxFit.cover,
+                      )),
                   SliverList(
                     delegate: SliverChildBuilderDelegate(
                       (BuildContext context, int index) {
@@ -60,8 +69,11 @@ class CustomRoomsScreen extends StatelessWidget {
                               .toString(),
                           device: context
                               .read<RoomsCubit>()
-                              .roms(deviceName)[index]
-                              .xda!,
+                              .deviceName
+                              .toUpperCase(),
+                          romModel: context
+                              .read<RoomsCubit>()
+                              .roms(deviceName)[index],
                         );
                       },
                       childCount:
