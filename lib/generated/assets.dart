@@ -10,6 +10,8 @@ class Assets {
   static const String imagesCpu = 'assets/images/cpu.jpg';
   static const String imagesForgotpasswordCuate =
       'assets/images/Forgotpassword-cuate.png';
+  static const String imagesInstallationBro =
+      'assets/images/installation-bro.png';
   static const String imagesLoading = 'assets/images/loading.json';
   static const String imagesUpdateBro = 'assets/images/Update-bro.png';
 }

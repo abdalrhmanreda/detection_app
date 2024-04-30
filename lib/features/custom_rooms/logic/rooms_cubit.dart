@@ -7,16 +7,42 @@ import '../models/room_model.dart';
 class RoomsCubit extends Cubit<RoomsState> {
   RoomsCubit() : super(const RoomsState.initial());
 
-  List<RoomModel> rooms = [];
+  List<RomModel> merlin = [];
+  List<RomModel> alioth = [];
+  List<RomModel> crosshatch = [];
+
   void fetchRooms() {
-    rooms = [];
     emit(const RoomsState.loading());
     FirebaseFirestore.instance.collection('data').get().then((value) {
-      rooms = value.docs.map((e) => RoomModel.fromJson(e.data())).toList();
-      print(rooms[1].version);
-      emit(RoomsState.loaded(value.docs));
+      merlin = value.docs.first
+          .data()['devices']['merlin']
+          .map<RomModel>((e) => RomModel.fromJson(e))
+          .toList();
+      alioth = value.docs.first
+          .data()['devices']['alioth']
+          .map<RomModel>((e) => RomModel.fromJson(e))
+          .toList();
+      crosshatch = value.docs.first
+          .data()['devices']['crosshatch']
+          .map<RomModel>((e) => RomModel.fromJson(e))
+          .toList();
+
+      emit(RoomsState.loaded([merlin, alioth, crosshatch]));
     }).catchError((error) {
       emit(RoomsState.error(error.toString()));
     });
+  }
+
+  List<RomModel> roms(String device) {
+    switch (device) {
+      case 'merlin':
+        return merlin;
+      case 'alioth':
+        return alioth;
+      case 'crosshatch':
+        return crosshatch;
+      default:
+        return [];
+    }
   }
 }

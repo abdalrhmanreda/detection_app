@@ -1,29 +1,40 @@
-import 'package:json_annotation/json_annotation.dart';
-
-part 'room_model.g.dart';
-
-@JsonSerializable()
-class RoomModel {
-  String? device;
-  String? roomName;
-  double? version;
+class RomModel {
+  String? romName;
+  num? version;
   String? state;
-  String? link;
+  String? downloadLink;
   String? xda;
+  String? preview;
+  String? description;
 
-  RoomModel({
-    this.device,
-    this.roomName,
-    this.version,
-    this.state,
-    this.link,
-    this.xda,
-  });
+  RomModel(
+      {this.romName,
+      this.version,
+      this.state,
+      this.downloadLink,
+      this.xda,
+      this.preview,
+      this.description});
 
-  // Generate a factory constructor for deserialization
-  factory RoomModel.fromJson(Map<String, dynamic> json) =>
-      _$RoomModelFromJson(json);
+  RomModel.fromJson(Map<String, dynamic> json) {
+    romName = json['romName'];
+    version = json['version'];
+    state = json['state'];
+    downloadLink = json['downloadLink'];
+    xda = json['xda'];
+    preview = json['preview'];
+    description = json['description'];
+  }
 
-  // Generate a method to serialize the object to a JSON map
-  Map<String, dynamic> toJson() => _$RoomModelToJson(this);
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['romName'] = romName;
+    data['version'] = version;
+    data['state'] = state;
+    data['downloadLink'] = downloadLink;
+    data['xda'] = xda;
+    data['preview'] = preview;
+    data['description'] = description;
+    return data;
+  }
 }

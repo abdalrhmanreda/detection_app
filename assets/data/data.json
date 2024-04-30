@@ -1,44 +1,136 @@
 {
-  "merlin": [
-    {
-      "device": "Merlin",
-      "roomName": "CRDROID",
-      "version": 14,
-      "state": "STABLE",
-      "link": "https://tinyurl.com/2p8sxwv5",
-      "xda": "https://tinyurl.com/2p8sxwv5"
-    },
-    {
-      "device": "Merlin",
-      "roomName": "CRDROID",
-      "version": 13,
-      "state": "STABLE",
-      "link": "https://tinyurl.com/52axeah3",
-      "xda": "https://tinyurl.com/4tyv3mjb"
-    },
-    {
-      "device": "Merlin",
-      "roomName": "Project Elixir",
-      "version": 12.1,
-      "state": "STABLE",
-      "link": "https://tinyurl.com/ypyz87nn",
-      "xda": "https://tinyurl.com/455kjsvf"
-    },
-    {
-      "device": "Merlin",
-      "roomName": "LineageOS",
-      "version": 11,
-      "state": "STABLE",
-      "link": "https://tinyurl.com/4kz2em6n",
-      "xda": "https://tinyurl.com/mwtk8v78"
-    },
-    {
-      "device": "Merlin",
-      "roomName": "SuperiorOS",
-      "version": 14,
-      "state": "closed",
-      "link": "not available",
-      "xda": ""
-    }
-  ]
+  "devices": {
+    "merlin": [
+      {
+        "romName": "CRDROID",
+        "version": 14,
+        "state": "STABLE",
+        "downloadLink": "https://tinyurl.com/2p8sxwv5",
+        "xda": "https://tinyurl.com/2p8sxwv5",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "crDroid has been around for some time and it has gained huge popularity among stock Android enthusiasts. Similar to AOSP Extended, crDroid has an active development team and supports lots of old devices."
+      },
+      {
+        "romName": "CRDROID",
+        "version": 13,
+        "state": "STABLE",
+        "downloadLink": "https://tinyurl.com/52axeah3",
+        "xda": "https://tinyurl.com/4tyv3mjb",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "crDroid has been around for some time and it has gained huge popularity among stock Android enthusiasts. Similar to AOSP Extended, crDroid has an active development team and supports lots of old devices."
+      },
+      {
+        "romName": "Project Elixir",
+        "version": 12.1,
+        "state": "STABLE",
+        "downloadLink": "https://tinyurl.com/ypyz87nn",
+        "xda": "https://tinyurl.com/455kjsvf",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "Project Elixir. It’s a beautiful AOSP ROM that is very close to stock Android with Pixel features and customization options. It features Essense which is based on the Substratum theme and delivers an elegant lock screen experience that you won’t find on any other ROM."
+      },
+      {
+        "romName": "LineageOS",
+        "version": 11,
+        "state": "STABLE",
+        "downloadLink": "https://tinyurl.com/4kz2em6n",
+        "xda": "https://tinyurl.com/mwtk8v78",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "LineageOS is probably the first thing that comes to mind. LineageOS is CyanogenMod and for those unaware, back in the fall of 2016, Cyanogen announced that it was discontinuing development and shut the infrastructure behind the project."
+      }
+    ],
+    "crosshatch": [
+      {
+        "romName": "LineageOS",
+        "version": 14,
+        "state": "STABLE",
+        "downloadLink": "https://tinyurl.com/2s6jsk48",
+        "xda": "https://tinyurl.com/yc6h592v",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "LineageOS is probably the first thing that comes to mind. LineageOS is CyanogenMod and for those unaware, back in the fall of 2016, Cyanogen announced that it was discontinuing development and shut the infrastructure behind the project."
+      },
+      {
+        "romName": "CRDROID",
+        "version": 13,
+        "state": "closed",
+        "downloadLink": "https://tinyurl.com/2s6jsk48",
+        "xda": "https://tinyurl.com/9a865mm9",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "crDroid has been around for some time and it has gained huge popularity among stock Android enthusiasts. Similar to AOSP Extended, crDroid has an active development team and supports lots of old devices."
+      },
+      {
+        "romName": "PixelOS",
+        "version": 14,
+        "state": "stable",
+        "downloadLink": "https://tinyurl.com/334ppryy",
+        "xda": "https://tinyurl.com/yn2neze2",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "Pixel Experience is the best custom ROM for Android right now and there are many reasons for the same. Support for lots of devices, Pixel features to non-pixel devices and more features, and the overall stability"
+      }
+    ],
+    "alioth": [
+      {
+        "romName": "Paranoid",
+        "version": 14,
+        "state": "BETA",
+        "downloadLink": "https://tinyurl.com/bdedb6b2",
+        "xda": "https://tinyurl.com/2rt5avat",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "Paranoid Android was resurrected from the dead. If you’re unaware, Paranoid Android is the OG and is one of the most acclaimed custom ROMs of all time. The development team has started to churn out the first batch of Android 14 Beta builds."
+      },
+      {
+        "romName": "LineageOS 21.0",
+        "version": 14,
+        "state": "stable",
+        "downloadLink": "https://tinyurl.com/32wfs4uj",
+        "xda": "https://tinyurl.com/4dajajfv",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "LineageOS is probably the first thing that comes to mind. LineageOS is CyanogenMod and for those unaware, back in the fall of 2016, Cyanogen announced that it was discontinuing development and shut the infrastructure behind the project."
+      },
+      {
+        "romName": "PixelOS",
+        "version": 14,
+        "state": "stable",
+        "downloadLink": "https://tinyurl.com/t3krf5ym",
+        "xda": "https://tinyurl.com/5b2ewapv",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "Pixel Experience is the best custom ROM for Android right now and there are many reasons for the same. Support for lots of devices, Pixel features to non-pixel devices and more features, and the overall stability"
+      },
+      {
+        "romName": "Evolution X",
+        "version": 14,
+        "state": "stable",
+        "downloadLink": "https://tinyurl.com/4ht9pb4x",
+        "xda": "https://tinyurl.com/3363x3wb",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "Evolution X is the Resurrection Remix from yesteryear. This is because of the plethora of customization features it offers, and it does while being relatively stable. Evolution X merges various code snippets into one main project to bring a long list of features for many devices."
+      },
+      {
+        "romName": "LineageOS 20",
+        "version": 13,
+        "state": "stable",
+        "downloadLink": "https://tinyurl.com/yc7hzux8",
+        "xda": "https://tinyurl.com/369mxtcc",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "LineageOS is probably the first thing that comes to mind. LineageOS is CyanogenMod and for those unaware, back in the fall of 2016, Cyanogen announced that it was discontinuing development and shut the infrastructure behind the project."
+      },
+      {
+        "romName": "crDROID",
+        "version": 14,
+        "state": "Stable",
+        "downloadLink": "https://tinyurl.com/bp8faab9",
+        "xda": "https://tinyurl.com/2p9dmyz8",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "crDroid has been around for some time and it has gained huge popularity among stock Android enthusiasts. Similar to AOSP Extended, crDroid has an active development team and supports lots of old devices."
+      },
+      {
+        "romName": "crDROID",
+        "version": 13,
+        "state": "Stable",
+        "downloadLink": "https://tinyurl.com/yckey35a",
+        "xda": "https://tinyurl.com/4nm4vbrc",
+        "preview": "https://youtu.be/XnmDlb3cBMU",
+        "description": "crDroid has been around for some time and it has gained huge popularity among stock Android enthusiasts. Similar to AOSP Extended, crDroid has an active development team and supports lots of old devices."
+      }
+    ]
+  }
 }

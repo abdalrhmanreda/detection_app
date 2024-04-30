@@ -7,4 +7,6 @@ class RoutePath {
   static const String chatbot = '/chatbotScreen';
   static const String forgetPass = '/forgetPassScreen';
   static const String customRoms = '/customRomsScreen';
+
+  static const String romDetails = '/romDetailsScreen';
 }

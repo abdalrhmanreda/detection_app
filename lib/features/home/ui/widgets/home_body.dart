@@ -69,7 +69,9 @@ class HomeBody extends StatelessWidget {
               ),
               // Add vertical spacing
               Spacing.verticalSpace(40),
-              const CustomRoms(),
+              CustomRoms(
+                deviceName: context.read<HomeCubit>().androidInfo!.device,
+              ),
             ],
           ),
         );

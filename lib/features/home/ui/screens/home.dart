@@ -42,11 +42,16 @@ class HomeScreen extends StatelessWidget {
                     horizontal: 10.0,
                     vertical: 10.0,
                   ),
-                  child: CachedNetworkImage(
-                    // Display the chatbot image using CachedNetworkImage
-                    imageUrl: AppConstant.chatBotImage,
-                    height: 35.h,
-                    width: 35.w,
+                  child: Row(
+                    children: [
+                      CachedNetworkImage(
+                        // Display the chatbot image using CachedNetworkImage
+                        imageUrl: AppConstant.chatBotImage,
+                        height: 35.h,
+                        width: 35.w,
+                      ),
+                      const Text('Chatbot'),
+                    ],
                   ),
                 ),
               ),
