@@ -1,0 +1,20 @@
+# This file contains the fastlane.tools configuration
+default_platform(:android)
+platform :android do
+  desc "Lane For Android Firebase App Distribution"
+  lane :firebase_distribution do
+    sh "flutter clean"
+    sh "flutter build apk --release  --target lib/main.dart --no-tree-shake-icons"
+    firebase_app_distribution(
+      app: "1:588007117450:android:86d80f67d4f7c1571ed373",
+      firebase_cli_token:"1//03foGtEsH1WrgCgYIARAAGAMSNwF-L9Ir8fltgUGCOiHtSnfZf38RUh4MA5xnase48VrMdGzIYpS_yTkR5doaibnbgXRkzX1VSW8" ,
+      android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk" ,
+      android_artifact_type: "APK",
+      testers: "abdalrhmanr555@gmail.com"
+
+    )
+
+
+
+  end
+end
