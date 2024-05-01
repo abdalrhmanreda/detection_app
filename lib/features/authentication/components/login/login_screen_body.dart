@@ -34,7 +34,7 @@ class LoginScreenBody extends StatelessWidget {
             image: Assets.imagesConfrim,
             isCancel: false,
             onPressed: () {
-              context.navigateToWidgetByNamed(context, RoutePath.home);
+              context.navigateAndFinishNyNamed(context, RoutePath.home);
             },
           );
         } else if (state is FailureState) {

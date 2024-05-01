@@ -1,4 +1,5 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
+import 'package:detection_app/core/helpers/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -38,7 +39,7 @@ class RegisterScreenBody extends StatelessWidget {
             image: Assets.imagesConfrim,
             isCancel: false,
             onPressed: () {
-              Navigator.pushNamed(context, RoutePath.home);
+              context.navigateAndFinishNyNamed(context, RoutePath.home);
             },
           );
         } else if (state is FailureState) {
