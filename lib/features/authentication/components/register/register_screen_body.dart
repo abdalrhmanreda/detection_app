@@ -85,6 +85,7 @@ class RegisterScreenBody extends StatelessWidget {
                       TitleAndTextFormFeild(
                         nameController: nameController,
                         title: AppLocalizations.of(context)!.registerFullName,
+                         keyboardType: TextInputType.name,
                         hint: 'xxxxxxxxx',
                       ),
                       Spacing.verticalSpace(20),
@@ -92,6 +93,8 @@ class RegisterScreenBody extends StatelessWidget {
                         nameController: phoneController,
                         title: 'Phone',
                         hint: '+20100000000',
+                       keyboardType: TextInputType.phone,
+
                       ),
                       Spacing.verticalSpace(20),
                       CustomTwoTextFromField(
