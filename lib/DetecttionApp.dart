@@ -20,6 +20,8 @@ class DetectionApp extends StatelessWidget {
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         theme: Style.lightTheme,
+         darkTheme: Style.darkTheme,
+        themeMode:ThemeMode.system , 
         initialRoute: RoutePath.getStarted,
         onGenerateRoute: appRouter.generateRoute,
       ),
