@@ -5,8 +5,8 @@ import '../../../../../config/colors/app_colors.dart';
 import '../../../../../core/constant/app_constant.dart';
 
 class ContainerTextFormFeild extends StatelessWidget {
-  ContainerTextFormFeild({
-    super.key,
+  const ContainerTextFormFeild({
+    Key? key, // Add Key parameter here
     required this.isPass,
     required this.controller,
     required this.hint,
@@ -16,17 +16,17 @@ class ContainerTextFormFeild extends StatelessWidget {
     this.suffixPressed,
     this.onChanged,
     this.validator,
-  });
+  }) : super(key: key); // Pass key to super constructor
 
   final bool isPass;
   final TextEditingController controller;
   final String hint;
   final TextInputType keyboardType;
-  IconData? suffixIcon;
-  IconData? prefixIcon;
-  String? Function(String?)? onChanged;
-  String? Function(String?)? validator;
-  VoidCallback? suffixPressed;
+  final IconData? suffixIcon;
+  final IconData? prefixIcon;
+  final String? Function(String?)? onChanged;
+  final String? Function(String?)? validator;
+  final VoidCallback? suffixPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -70,18 +70,6 @@ class ContainerTextFormFeild extends StatelessWidget {
             keyboardType: keyboardType,
           ),
         ),
-        //   if (validator != null)
-        //     Padding(
-        //       padding: const EdgeInsets.only(top: 4.0, left: 12.0),
-        //       child: Text(
-        //         validator!(controller.text) ?? '',
-        //         style: TextStyle(
-        //           color: Colors.red,
-        //           fontSize: 12.sp,
-        //         ),
-        //       ),
-        //     ),
-        // ],
       ],
     );
   }
