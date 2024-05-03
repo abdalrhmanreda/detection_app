@@ -22,7 +22,7 @@ class DetectionApp extends StatelessWidget {
         theme: Style.lightTheme,
          darkTheme: Style.darkTheme,
         themeMode:ThemeMode.system , 
-        initialRoute: RoutePath.getStarted,
+        initialRoute: initRoute,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );
