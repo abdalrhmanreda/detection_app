@@ -17,6 +17,8 @@ class TitleAndTextFormFeild extends StatelessWidget {
   final TextEditingController nameController;
   final String title;
   final String hint;
+  final TextInputType keyboardType;
+
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +38,7 @@ class TitleAndTextFormFeild extends StatelessWidget {
               isPass: false,
               controller: nameController,
               hint: hint,
-              keyboardType: TextInputType.emailAddress,
+            keyboardType: keyboardType,
             ),
           ],
         ),
